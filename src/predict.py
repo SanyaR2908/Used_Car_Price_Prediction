@@ -1,5 +1,6 @@
 import os
 import joblib
+import gdown
 import pandas as pd
 
 from src.config import (
@@ -8,15 +9,14 @@ from src.config import (
     CURRENT_YEAR
 )
 
-# Check whether the trained model exists
-if not os.path.exists(RF_MODEL_PATH):
-    raise FileNotFoundError(
-        "\nRandom Forest model not found!\n\n"
-        "Please train the model first by running:\n\n"
-        "python src/train.py\n"
-    )
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1DWl4_fzRcmLaDIB60wF7fPBnZe4LcGu8"
 
-# Load trained Random Forest model
+os.makedirs("models", exist_ok=True)
+
+if not os.path.exists(RF_MODEL_PATH):
+    print("Downloading trained model...")
+    gdown.download(MODEL_URL, RF_MODEL_PATH, quiet=False)
+
 rf_model = joblib.load(RF_MODEL_PATH)
 
 
