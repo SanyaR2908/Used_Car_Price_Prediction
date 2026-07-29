@@ -1,5 +1,10 @@
 # Used Car Price Prediction
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Random%20Forest-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 A Machine Learning web application that predicts the resale price of Volkswagen and Audi used cars using a Random Forest Regressor.
 
 ---
@@ -20,7 +25,13 @@ This project estimates the market value of used cars based on their specificatio
 The application is built with **Python**, **Scikit-learn**, and **Streamlit**.
 
 ---
+## Key Highlights
 
+- Predicts resale prices for Volkswagen and Audi vehicles
+- Trained on over 25,000 used car listings
+- Achieved an R² score of 94.17%
+- Interactive web application built with Streamlit
+---
 ## Dataset
 
 The dataset consists of **25,458** used car listings from:
@@ -69,8 +80,7 @@ Used_Car_Price_Prediction/
 │ └── vw.csv
 │
 ├── models/
-│ ├── linear_regression.pkl
-│ └── random_forest.pkl
+│   └── (Generated after training)
 │
 ├── outputs/
 │
@@ -87,37 +97,42 @@ Used_Car_Price_Prediction/
 ---
 
 ## Features
-
-- Data preprocessing
+- Data cleaning and preprocessing
 - Feature engineering
-- Model training
-- Model comparison
-- Real-time price prediction
-- Interactive Streamlit interface
-- Clean modular project structure
-
+- Random Forest regression model
+- Linear Regression baseline model
+- Interactive Streamlit web application
+- Real-time used car price prediction
+- Modular project architecture
 ---
 
 ## Technologies Used
 
+
+**Programming Language**
 - Python
+
+**Libraries**
 - Pandas
 - NumPy
 - Scikit-learn
 - Joblib
+
+**Framework**
 - Streamlit
 
 ---
+
 
 ## Installation
 
 Clone the repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/SanyaR2908/Used_Car_Price_Prediction.git
 ```
 
-Move into the project folder
+Move into the project
 
 ```bash
 cd Used_Car_Price_Prediction
@@ -129,14 +144,22 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the application
+Train the models
+
+```bash
+python src/train.py
+```
+
+Run the Streamlit application
 
 ```bash
 streamlit run app.py
 ```
 
 ---
+## Live Demo
 
+Coming soon...
 ## Application Preview
 
 ### Home Screen
@@ -160,7 +183,7 @@ streamlit run app.py
 ### Model Performance
 
 ![Model Information](screenshots/model_info.png)
-
+---
 ## Future Improvements
 
 - Support additional car brands
@@ -173,8 +196,17 @@ streamlit run app.py
 
 ## Author
 
-Sanya Ray
+**Sanya Ray**
 
-B.Tech Electronics and Communication Engineering
+B.Tech in Electronics and Communication Engineering
 
-Machine Learning | Data Science | Python
+Interests:
+- Machine Learning
+- Data Science
+- Python Development
+- Artificial Intelligence
+
+GitHub Profile: https://github.com/SanyaR2908
+## License
+
+This project is licensed under the MIT License.
