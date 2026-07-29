@@ -159,7 +159,7 @@ streamlit run app.py
 ---
 ## Live Demo
 
-Coming soon...
+Streamlit app link: (https://vehicle-price-estimator.streamlit.app)
 ## Application Preview
 
 ### Home Screen
